@@ -26,7 +26,7 @@ az acr show --name demoacr --resource-group acr-rg -o table
 az acr create --resource-group <resource_group_name> --name <new_registry_name> --sku Basic
 ```
 
-Note: ACR name only accespt alfa numeric charecters and limit berween 5 to 55 length.
+<b>Note:</b> ACR name only accespt alfa numeric charecters and limit berween 5 to 55 length.
 
 ```bash
 az acr create --resource-group acr-rg --name demoacr --sku Basic
