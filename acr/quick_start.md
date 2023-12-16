@@ -1,6 +1,6 @@
-## ACR Quick Start with az CLI
+### ACR Quick Start with az CLI
 
-### Login into the subscription and create Resource Group : acr-rg
+#### Login into the subscription and create Resource Group : acr-rg
 
 ```bash
 az login
@@ -10,9 +10,9 @@ az group list -o table
 az group create --name acr-rg --location westeurope
 ```
 
-### Create ACR (SKU: Basic)
+#### Create ACR (SKU: Basic)
 
-### List the existing ACR and view details required.
+#### List the existing ACR and view details required.
 
 ```bash
 az acr list
@@ -20,7 +20,7 @@ az acr show --name <registry-name> --resource-group <RG_Name>
 az acr show --name demoacr --resource-group acr-rg -o table 
 ```
 
-### Create a new ACR into the RG acr-rg
+#### Create a new ACR into the RG acr-rg
 
 ```bash
 az acr create --resource-group <resource_group_name> --name <new_registry_name> --sku Basic
@@ -34,7 +34,7 @@ az acr create --resource-group acr-rg --name demoacr --sku Basic
 To Check: az acr list -o table
 ```
 
-### Login to ACR and Push Images
+#### Login to ACR and Push Images
 
 Get the Login Server name
 -  Login Server: ocpdemoacr.azurecr.io
