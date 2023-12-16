@@ -9,7 +9,7 @@ az group create --name acr-rg --location westeurope
 
 Create ACR (SKU: Basic)
 
----
+---bash
 az acr list
 az acr show --name <registry-name> --resource-group <RG_Name>
 Ex.
