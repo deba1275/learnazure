@@ -30,6 +30,8 @@ az acr create --resource-group <resource_group_name> --name <new_registry_name> 
 
 ```bash
 az acr create --resource-group acr-rg --name demoacr --sku Basic
+
+To Check: az acr list -o table
 ```
 
 Login to ACR and Push Images
