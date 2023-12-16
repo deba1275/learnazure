@@ -1,5 +1,6 @@
+#ACR Quick Start with az CLI
 
-Login into the subscription and create Resource Group : acr-rg
+##Login into the subscription and create Resource Group : acr-rg
 
 az login
 az account set -s <subscription_name>
@@ -7,12 +8,11 @@ az account set -s <subscription_name>
 az group list -o table 
 az group create --name acr-rg --location westeurope
 
-Create ACR (SKU: Basic)
+##Create ACR (SKU: Basic)
 
 ---bash
 az acr list
 az acr show --name <registry-name> --resource-group <RG_Name>
-Ex.
 az acr show --name demoacr --resource-group acr-rg -o table 
 ---
 
