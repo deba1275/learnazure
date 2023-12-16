@@ -37,7 +37,7 @@ To Check: az acr list -o table
 ### Login to ACR and Push Images
 
 Get the Login Server name
-Login Server: ocpdemoacr.azurecr.io
+-  Login Server: ocpdemoacr.azurecr.io
 ```bash
 $ az acr show --name ocpdemoacr --resource-group acr-rg --output tsv --query loginServer
 ocpdemoacr.azurecr.io
