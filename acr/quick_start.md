@@ -10,7 +10,7 @@ az group list -o table
 az group create --name acr-rg --location westeurope
 ```
 
-## Create ACR (SKU: Basic)
+### Create ACR (SKU: Basic)
 
 ### List the existing ACR and view details required.
 
