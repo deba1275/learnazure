@@ -34,13 +34,15 @@ az acr create --resource-group acr-rg --name demoacr --sku Basic
 To Check: az acr list -o table
 ```
 
-Login to ACR and Push Images
+### Login to ACR and Push Images
 
+Get the Login Server name
 Login Server: ocpdemoacr.azurecr.io
-
-az acr show --name ocpdemoacr --resource-group acr-rg --output tsv --query loginServer
+```bash
+$ az acr show --name ocpdemoacr --resource-group acr-rg --output tsv --query loginServer
 ocpdemoacr.azurecr.io
-
+$
+```
 
 
 
