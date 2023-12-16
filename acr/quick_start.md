@@ -53,7 +53,11 @@ Login Sucessful
 $
 ```
 
-docker pull mcr.microsoft.com/hello-world
-docker tag mcr.microsoft.com/hello-world ocpdemoacr.azurecr.io/hello-world:v1
+Pull hello-world docker image locally and push to the ACR
 
-docker push ocpdemoacr.azurecr.io/hello-world:v1
+```bash
+docker pull mcr.microsoft.com/hello-world
+docker tag mcr.microsoft.com/hello-world demoacr.azurecr.io/hello-world:v1
+docker push demoacr.azurecr.io/hello-world:v1
+```
+
