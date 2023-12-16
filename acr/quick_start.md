@@ -9,10 +9,12 @@ az group create --name acr-rg --location westeurope
 
 Create ACR (SKU: Basic)
 
+---
 az acr list
 az acr show --name <registry-name> --resource-group <RG_Name>
 Ex.
-az acr show --name vccicpregistry2 --resource-group icp-registry -o table 
+az acr show --name demoacr --resource-group acr-rg -o table 
+---
 
 az acr create --resource-group <resource_group_name> --name <new_registry_name> --sku Basic
 
