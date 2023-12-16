@@ -1,6 +1,6 @@
-# ACR Quick Start with az CLI
+## ACR Quick Start with az CLI
 
-## Login into the subscription and create Resource Group : acr-rg
+### Login into the subscription and create Resource Group : acr-rg
 
 ```bash
 az login
