@@ -44,7 +44,14 @@ ocpdemoacr.azurecr.io
 $
 ```
 
+Docker daemon must be running to test this steps
 
+```bash
+az acr login --name <registry_name>
+$ az acr login -n demoacr
+Login Sucessful
+$
+```
 
 docker pull mcr.microsoft.com/hello-world
 docker tag mcr.microsoft.com/hello-world ocpdemoacr.azurecr.io/hello-world:v1
