@@ -12,18 +12,25 @@ az group create --name acr-rg --location westeurope
 
 ## Create ACR (SKU: Basic)
 
+### List the existing ACR and view details required.
+
 ```bash
 az acr list
 az acr show --name <registry-name> --resource-group <RG_Name>
 az acr show --name demoacr --resource-group acr-rg -o table 
 ```
 
+### Create a new ACR into the RG acr-rg
+
+```bash
 az acr create --resource-group <resource_group_name> --name <new_registry_name> --sku Basic
+```
 
-Note: ACR name only alfa numeric charecter 
+Note: ACR name only accespt alfa numeric charecters and limit berween 5 to 55 length.
 
-az acr create --resource-group acr-rg --name ocpdemoacr --sku Basic
-
+```bash
+az acr create --resource-group acr-rg --name demoacr --sku Basic
+```
 
 Login to ACR and Push Images
 
